@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#hero {
+    height: 100vh;
+    color:black;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+#alerts h2, #maps h2, #resources h2, #community h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+}
+
+footer p, footer h5, footer a {
+    color: #000;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: green;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+#alerts {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#alerts h2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact form {
+    padding: 100px;
+}
+
+.contact h1 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.contact p {
+    padding-left: 100px;
+    padding-right: 100px;
+}

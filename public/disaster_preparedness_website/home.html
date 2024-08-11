@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Preparedness and Response</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4">Infinite Loops</span>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item active"><a class="nav-link" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+            <li class="nav-item"><a class="nav-link" href="alerts.html">Alerts</a></li>
+            <li class="nav-item"><a class="nav-link" href="maps.html">Maps</a></li>
+            <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </header>
+      </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center">
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+            <h1 class="display-4 fw-bold text-body-emphasis">Stay Informed, Stay Prepared</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">Your Ultimate Guide to Navigating the Challenges of Natural and Man-Made Disasters: Providing Expert Insights, Proactive Strategies, and Essential Resources to Keep You and Your Community Safe and Resilient in Times of Crisis.</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3"><a href="https://ors.od.nih.gov/ser/dem/emergencyPrep/Pages/Disaster-Preparedness-Tips.aspx" style="text-decoration: none; color: white">Get Started</a></button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4"><a href="https://unesdoc.unesco.org/ark:/48223/pf0000228798" style="text-decoration: none;">Learn More</a></button>
+              </div>
+            </div>
+            <div class="overflow-hidden" style="max-height: 40vh;">
+              <div class="container px-5">
+                <img src="homepic.jpeg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="400" loading="lazy">
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- Real-Time Alerts -->
+<section id="alerts" class="container mt-5">
+    <div class="d-flex align-items-center">
+        <h2><img src="alert_icon.png" alt="Alert Icon" class="mr-2 alert">Real-Time Alerts</h2>
+    </div>
+    <div id="alert-container">
+        <!-- Alerts will be dynamically loaded here -->
+    </div>
+    <form id="notification-signup" class="mt-3">
+        <h5>Sign up for Notifications</h5>
+        <input type="email" class="form-control" placeholder="Enter your email">
+        <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
+    </form>
+</section>
+
+
+    <!-- Interactive Disaster Maps -->
+    <section id="maps" class="container mt-5">
+        <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalTour">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-body d-flex flex-column align-items-center justify-content-center p-8 text-center">
+                        <h2 class="fw-bold mb-4">Disaster Map</h2>
+                        <div>
+                            <img src="./maps.jpg" alt="Disaster Map" height="400" width="300" class="mb-4">
+                        </div>
+                        <button type="button" class="btn btn-lg btn-primary mt-3 w-100" data-bs-dismiss="modal">
+                            <a href="https://bmtpc.org/topics.aspx?mid=56&Mid1=178" style="text-decoration: none; color: white;">More Maps</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Educational Resources -->
+    <section id="resources" class="container mt-5">
+        <h2 style="text-align: center;">Educational Resources</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="preparation.jpeg" class="card-img-top" alt="Preparation">
+                    <div class="card-body">
+                        <h5 class="card-title">Preparation Guidelines</h5>
+                        <p class="card-text">Learn how to prepare for various natural disasters.</p>
+                        <a href="https://mdem.maryland.gov/Pages/10-Things.aspx" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="fristaid.jpeg" class="card-img-top" alt="First Aid">
+                    <div class="card-body">
+                        <h5 class="card-title">First Aid Tutorials</h5>
+                        <p class="card-text">Step-by-step guides on first aid and survival tips.</p>
+                        <a href="https://youtu.be/WM5tJy_x0zk" class="btn btn-primary">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="webnier.jpeg" class="card-img-top" alt="Webinars">
+                    <div class="card-body">
+                        <h5 class="card-title">Webinars and Workshops</h5>
+                        <p class="card-text">Join live sessions with disaster response experts.</p>
+                        <a href="https://extensiondisaster.net/news-events/webinars/" class="btn btn-primary">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br><br>
+
+    <!-- Community and Support -->
+    <section id="community" class="container mt-5">
+        <h2 style="text-align: center;">Community and Support</h2>
+        <div class="row">
+            <div class="col-md-5" style="border: 1px solid black; border-radius: 10px; padding: 10px; margin:20px;">
+                <h4>Join the Discussion</h4>
+                <p>Engage with others in our community forums to share experiences, ask questions, and offer advice.</p>
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3780560/" class="btn btn-primary">Visit Forums</a>
+            </div>
+            <div class="col-md-5" style="border: 1px solid black; border-radius: 10px; padding: 10px; margin:20px;">
+                <h4>Testimonials</h4>
+                <p>Read stories from individuals who have successfully navigated disasters with the help of our resources.</p>
+                <a href="https://hoop.dev/blog/8-real-life-stories-of-disaster-recovery-success-in-difficult-situations/" class="btn btn-secondary">Read Stories</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+          </div>
+        </footer>
+      </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
