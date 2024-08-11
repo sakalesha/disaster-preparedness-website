@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Witness Form</title>
+    <link rel="stylesheet" href="form_fill.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Disaster Witness Form</h2>
+        <form id="disasterForm">
+            <div class="form-group">
+                <label for="disasterType">Type of Disaster:</label>
+                <select id="disasterType" name="disasterType" required>
+                    <option value="">Select a disaster</option>
+                    <option value="earthquake">Earthquake</option>
+                    <option value="flood">Flood</option>
+                    <option value="wildfire">Wildfire</option>
+                    <option value="hurricane">Hurricane</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter the location" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" placeholder="Enter the date (e.g., YYYY-MM-DD)" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="5" placeholder="Describe what you witnessed" required></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="form_fill.js"></script>
+
+
+
+</body>
+</html>
